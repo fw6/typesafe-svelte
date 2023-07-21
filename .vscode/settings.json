@@ -1,0 +1,46 @@
+{
+    "json.schemaDownload.enable": true,
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "npm.packageManager": "pnpm",
+    "search.exclude": {
+        "**/.git": true,
+        "**/.github": true,
+        "**/.nuxt": true,
+        "**/.output": true,
+        "**/.pnpm": true,
+        "**/.vscode": true,
+        "**/.yarn": true,
+        "**/bower_components": true,
+        "**/dist/**": true,
+        "**/logs": true,
+        "**/node_modules": true,
+        "**/out/**": true,
+        "**/package-lock.json": true,
+        "**/pnpm-lock.yaml": true,
+        "**/tmp": true,
+        "**/dist": true,
+        "**/yarn.lock": true
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "rome.rome"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "rome.rome"
+    },
+    // https://github.com/sveltejs/language-tools/blob/master/packages/svelte-vscode/package.json
+    "svelte.enable-ts-plugin": true,
+    // FIXME: 垃圾prettier！printWidth不生效、换行位置很难看，暂时先关掉，移除prettier后再开启（singleAttributePerLine 配置暂不支持）
+    // "svelte.plugin.svelte.format.enable": false,
+    "svelte.plugin.svelte.format.config.printWidth": 999,
+    // "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+    "js/ts.implicitProjectConfig.checkJs": true,
+}
